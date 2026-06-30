@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Airbeat QR Admin</title>
+
+<style>
+
+body {
+font-family: Arial;
+padding: 30px;
+text-align:center;
+background:#111;
+color:white;
+}
+
+textarea {
+width:100%;
+height:150px;
+font-size:20px;
+}
+
+button {
+margin-top:20px;
+padding:15px 30px;
+font-size:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>🍻 Nachricht ändern</h1>
+
+<textarea id="text">Deine Nachricht...</textarea>
+
+<br>
+
+<button id="save">
+Speichern
+</button>
+
+
+<script type="module">
+
+
+import { initializeApp } 
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+
+import {
+getFirestore,
+doc,
+setDoc
+}
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+
+const firebaseConfig = {
+
+apiKey: "AIzaSyAaBRt_uKXAn9-MNiXc-RDdgk48-ztr_A",
+authDomain: "airbeatfestivalqr.firebaseapp.com",
+projectId: "airbeatfestivalqr",
+storageBucket: "airbeatfestivalqr.firebasestorage.app",
+messagingSenderId: "529699781521",
+appId: "1:529699781521:web:369f5ebaf711d9076c3830"
+
+};
+
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+
+
+document.getElementById("save").onclick = async ()=>{
+
+
+let text =
+document.getElementById("text").value;
+
+
+await setDoc(
+doc(db,"festival","message"),
+{
+text:text
+}
+);
+
+
+alert("Gespeichert 🍻");
+
+
+};
+
+
+</script>
+
+
+</body>
+</html>
