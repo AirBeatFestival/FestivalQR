@@ -77,7 +77,41 @@ const db = getFirestore(app);
 
 
 
+const pin = "1807";
+
 document.getElementById("save").onclick = async ()=>{
+
+let entered =
+
+prompt("PIN eingeben:");
+
+if(entered !== pin){
+
+alert("Falsche PIN ❌");
+
+return;
+
+}
+
+let text =
+
+document.getElementById("text").value;
+
+await setDoc(
+
+doc(db,"festival","message"),
+
+{
+
+text:text
+
+}
+
+);
+
+alert("Gespeichert 🍻");
+
+};
 
 
 let text =
