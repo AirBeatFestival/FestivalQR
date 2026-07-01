@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(135deg,#1b0033,#000814,#240046);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:25px;
+
+}
+
+
+.card{
+
+    width:100%;
+    max-width:700px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+    0 0 35px rgba(0,255,255,.18);
+
+}
+
+
+h1{
+
+    text-align:center;
+
+    font-size:42px;
+
+}
+
+
+.subtitle{
+
+    text-align:center;
+
+    opacity:.8;
+
+    margin-top:10px;
+
+}
+
+
+.counter{
+
+    margin-top:35px;
+
+    text-align:center;
+
+    font-size:26px;
+
+}
+
+
+.message{
+
+    margin-top:35px;
+
+    font-size:34px;
+
+    text-align:center;
+
+    line-height:1.5;
+
+}
+
+
+.random{
+
+    margin-top:30px;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.06);
+
+    text-align:center;
+
+    font-size:22px;
+
+}
+
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+    margin-top:35px;
+
+}
+
+
+.stat{
+
+    padding:18px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.05);
+
+}
+
+
+button{
+
+    width:100%;
+
+    margin-top:18px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:15px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+button:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+.beer{
+
+    background:#ffb703;
+
+}
+
+
+.laugh{
+
+    background:#06d6a0;
+
+}
+
+
+.highfive{
+
+    background:#00b4d8;
+
+}
+
+
+.dance{
+
+    background:#f72585;
+
+}
+
+.footer{
+
+    margin-top:30px;
+
+    text-align:center;
+
+    opacity:.7;
+
+}
