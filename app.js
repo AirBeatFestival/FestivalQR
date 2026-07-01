@@ -79,7 +79,7 @@ scans:increment(1)
 
 
 addScan();
-
+console.log("App gestartet");
 
 // Nachricht live laden
 
