@@ -32,7 +32,11 @@ const colors = [
 ];
 
 
-const size = canvas.width;
+const size = 320;
+
+canvas.width = size;
+canvas.height = size;
+
 const center = size / 2;
 const radius = size / 2;
 
