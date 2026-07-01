@@ -1,78 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Airbeat Festival QR</title>
 
-<style>
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 40px;
-  background: #111;
-  color: white;
-}
+<link rel="stylesheet" href="style.css">
 
-h1 {
-  font-size: 32px;
-}
-
-#message {
-  margin-top: 50px;
-  font-size: 28px;
-}
-
-</style>
 </head>
+
 
 <body>
 
+
+<div class="card">
+
+
 <h1>🍻 AIRBEAT QR</h1>
 
-<div id="message">
-Lade...
+<div class="subtitle">
+Dein Festival in einem QR-Code
 </div>
 
 
-<script type="module">
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+<div class="counter">
 
-import {
-getFirestore,
-doc,
-onSnapshot
-} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+<div id="scans">
+👀 Scans: 0
+</div>
 
-
-const firebaseConfig = {
-apiKey: "AIzaSyAaBRt_uKXAn9-MNiXc-RDdgk48-ztr_A4",
-authDomain: "airbeatfestivalqr.firebaseapp.com",
-projectId: "airbeatfestivalqr",
-storageBucket: "airbeatfestivalqr.firebasestorage.app",
-messagingSenderId: "529699781521",
-appId: "1:529699781521:web:369f5ebaf711d9076c3830"
-};
+</div>
 
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+
+<div class="message" id="message">
+
+Lade...
+
+</div>
 
 
-onSnapshot(
-doc(db,"festival","message"),
-(snapshot)=>{
 
-if(snapshot.exists()){
-document.getElementById("message").innerHTML =
-snapshot.data().text;
-}
+<div class="random" id="random">
 
-});
+🎲 Lade Spruch...
 
-</script>
+</div>
+
+
+
+<div class="stats">
+
+
+<div class="stat" id="beers">
+🍺 Bier: 0
+</div>
+
+
+<div class="stat" id="laughs">
+😂 Lacher: 0
+</div>
+
+
+<div class="stat" id="highfives">
+🙌 High Fives: 0
+</div>
+
+
+<div class="stat" id="dances">
+💃 Tänze: 0
+</div>
+
+
+</div>
+
+
+
+<button class="beer" id="beer">
+🍺 Ich habe ein Bier ausgegeben
+</button>
+
+
+<button class="laugh" id="laugh">
+😂 Musste lachen
+</button>
+
+
+<button class="highfive" id="highfive">
+🙌 High Five
+</button>
+
+
+<button class="dance" id="dance">
+💃 Wir haben getanzt
+</button>
+
+
+
+<div class="footer">
+
+QR powered by Festival Mode 🚀
+
+</div>
+
+
+</div>
+
+
+
+<script type="module" src="app.js"></script>
 
 
 </body>
+
 </html>
