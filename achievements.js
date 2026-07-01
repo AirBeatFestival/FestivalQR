@@ -1,3 +1,5 @@
+console.log("Achievements geladen", typeof confetti);
+
 function showAchievement(title,text){
 
   document.getElementById("achievementTitle").innerHTML = title;
