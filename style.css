@@ -198,3 +198,35 @@ button:hover{
     opacity:.7;
 
 }
+#achievement {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,.6);
+  z-index:999;
+}
+
+.hidden {
+  display:none!important;
+}
+
+.achievement-box {
+  padding:30px;
+  border-radius:25px;
+  background:white;
+  text-align:center;
+  animation:pop .4s ease;
+}
+
+@keyframes pop {
+ from {
+  transform:scale(.5);
+  opacity:0;
+ }
+ to {
+  transform:scale(1);
+  opacity:1;
+ }
+}
