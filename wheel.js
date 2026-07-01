@@ -1,5 +1,4 @@
-// wheel.js
-// Glücksrad mit 8 Aufgaben
+document.addEventListener("DOMContentLoaded", () => {
 
 const canvas = document.getElementById("wheelCanvas");
 const ctx = canvas.getContext("2d");
