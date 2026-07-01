@@ -571,3 +571,4 @@ console.log(
     "🎡 Glücksrad bereit!",
     tasks
 );
+});
