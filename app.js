@@ -130,6 +130,11 @@ danceBox.innerHTML =
 
 
 
+// Erfolge
+
+checkAchievements(s.scans);
+
+
 // Easter Egg
 
 if(
