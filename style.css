@@ -236,6 +236,11 @@ text-align:center;
 margin-top:20px;
 }
 
+.pointer {
+font-size:35px;
+text-align:center;
+}
+
 
 #wheel {
 width:220px;
