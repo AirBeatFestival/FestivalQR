@@ -8,25 +8,33 @@ const tasks = [
 ];
 
 
-const wheelButton =
+const wheel =
 document.getElementById("wheel");
 
+const spin =
+document.getElementById("spin");
 
-const wheelResult =
+const result =
 document.getElementById("wheelResult");
 
 
-if(wheelButton){
+spin.onclick = ()=>{
 
-wheelButton.onclick = ()=>{
+wheel.classList.add("rotate");
 
-const random =
+
+setTimeout(()=>{
+
+const task =
 tasks[Math.floor(Math.random()*tasks.length)];
 
 
-wheelResult.innerHTML =
-"🎰 Aufgabe:<br><br>"+random;
+result.innerHTML =
+"🎉 Aufgabe:<br><br>"+task;
+
+
+wheel.classList.remove("rotate");
+
+},2000);
 
 };
-
-}
