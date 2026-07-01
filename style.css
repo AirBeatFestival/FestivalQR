@@ -283,3 +283,103 @@ margin-top:20px;
 padding:15px 25px;
 font-size:20px;
 }
+.wheel-container{
+
+    position:relative;
+
+    margin-top:40px;
+
+    text-align:center;
+
+}
+
+#wheelCanvas{
+
+    width:320px;
+
+    max-width:95%;
+
+    border-radius:50%;
+
+    border:8px solid white;
+
+    box-shadow:
+    0 0 30px rgba(255,255,255,.25);
+
+}
+
+.pointer{
+
+    font-size:42px;
+
+    margin-bottom:-8px;
+
+    z-index:5;
+
+    position:relative;
+
+}
+
+#spin{
+
+    margin-top:25px;
+
+}
+
+#winnerOverlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    pointer-events:none;
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+#winnerOverlay.show{
+
+    opacity:1;
+
+}
+
+#winnerText{
+
+    width:170px;
+
+    height:170px;
+
+    border-radius:50%;
+
+    background:rgba(0,0,0,.82);
+
+    border:4px solid white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:18px;
+
+    font-size:21px;
+
+    font-weight:bold;
+
+    color:white;
+
+    animation:pop .35s;
+
+}
