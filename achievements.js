@@ -7,12 +7,13 @@ function showAchievement(title,text){
   .getElementById("achievement")
   .classList.remove("hidden");
 
-  if(typeof confetti === "function"){
-    confetti({
-      particleCount: 180,
-      spread: 120
-    });
+  confetti({
+  particleCount: 180,
+  spread: 120,
+  origin: {
+    y: 0.6
   }
+});
 
   setTimeout(()=>{
     document
