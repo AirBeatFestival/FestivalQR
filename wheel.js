@@ -8,7 +8,7 @@ const winnerOverlay = document.getElementById("winnerOverlay");
 const winnerText = document.getElementById("winnerText");
 
 const tasks = [
-    "10 Liegestütze",
+    "Bier",
     "Eine Runde tanzen",
     "30 Sekunden Plank",
     "Jemandem ein Kompliment machen",
