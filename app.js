@@ -114,7 +114,7 @@ scanBox.innerHTML =
 
 
 beerBox.innerHTML =
-"🍺 Bier: "+s.beers;
+"💋 Küsse: "+s.beers;
 
 
 laughBox.innerHTML =
