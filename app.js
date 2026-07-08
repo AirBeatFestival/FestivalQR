@@ -122,7 +122,7 @@ laughBox.innerHTML =
 
 
 highfiveBox.innerHTML =
-"🙌 High Fives: "+s.highfives;
+"🙌 Wiedersehen: "+s.highfives;
 
 
 danceBox.innerHTML =
