@@ -118,7 +118,7 @@ beerBox.innerHTML =
 
 
 laughBox.innerHTML =
-"😂 Lacher: "+s.laughs;
+"🍆💦: "+s.laughs;
 
 
 highfiveBox.innerHTML =
