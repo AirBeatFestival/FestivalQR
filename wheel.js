@@ -9,13 +9,13 @@ const winnerText = document.getElementById("winnerText");
 
 const tasks = [
     "Bier",
-    "Eine Runde tanzen",
-    "30 Sekunden Plank",
-    "Jemandem ein Kompliment machen",
-    "Ein Glas Wasser trinken",
-    "5 Kniebeugen",
-    "Eine lustige Geschichte erzählen",
-    "Freie Aufgabe"
+    "Kuss",
+    "Oberteil Tausch",
+    "Getränk ausgeben",
+    "Nummer geben",
+    "Arsch-TÜV",
+    "Tanzen",
+    "Was du möchtest😳"
 ];
 
 
