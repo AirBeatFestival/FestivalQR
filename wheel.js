@@ -8,9 +8,9 @@ const winnerOverlay = document.getElementById("winnerOverlay");
 const winnerText = document.getElementById("winnerText");
 
 const tasks = [
-    "Bier",
-    "Kuss",
-    "Oberteil Tausch",
+    "Bier trinken",
+    "Kuss geben",
+    "Oberteil tauschen",
     "Getränk ausgeben",
     "Nummer geben",
     "Arsch-TÜV",
